@@ -1,0 +1,109 @@
+@use "header";
+@use "mixin";
+@use "footer";
+
+@mixin buttons {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    padding: 15px 35px;
+    background-image: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    border-radius: 50px;
+}
+
+body {  
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+}
+
+.main {
+    padding: 20px;
+}
+
+.home {
+    text-align: center;
+    padding-bottom: 75px;
+}
+
+.homeContainer__img--mob {
+    width: 100%;
+    height: auto;
+}
+
+.home__Title {
+    color: hsl(233, 26%, 24%);
+    font-weight: 300;
+    font-size: 45px;
+}
+
+.paragraph {
+    font-weight: 300;
+    color: hsl(233, 8%, 62%);
+    line-height: 1.5em;
+    padding-bottom: 30px;
+}
+
+.home__link {
+    @include buttons;
+}
+
+.about {
+    text-align: center;
+    padding: 75px 0;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.about__Title{
+    color: hsl(233, 26%, 24%);
+    font-weight: 300;
+    font-size: 38px;
+}
+
+.about__Card__Title {
+    color: hsl(233, 26%, 24%);
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.articles {
+    background-color: white;
+    text-align: center;
+    padding: 75px 0;
+}
+
+.articles__Ttile {
+    color: hsl(233, 26%, 24%);
+    font-weight: 300;
+    font-size: 38px;
+}
+
+.articles__Container  {
+    text-align: left;
+}
+
+.articles__Container {
+    .articles__Container__img {
+        border-radius: 10px 10px 0px 0px;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 30px;
+    } 
+}
+
+.articles__Container__span {
+    color: hsl(233, 8%, 62%);
+    font-weight: 300;
+    font-size: 13px;
+    padding: 0px 40px;
+}
+
+.articles__Container__title {
+    color: hsl(233, 26%, 24%);
+    font-weight: 300;
+    padding: 0px 40px;
+}
+
+.articles__Container__paragraph {
+    font-size: 14px;
+    padding: 0px 40px;
+    padding-bottom: 60px;
+}

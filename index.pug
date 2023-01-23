@@ -1,0 +1,82 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="shortcut icon", href="./images/favicon-32x32.png", type="image/x-icon")
+        title Frontend Mentor | Easybank landing page
+    body 
+        header.header 
+            a.header__linklogo(href=""): img.headerlogo(src="./images/logo.svg", alt="", srcset="")
+            nav.headernav 
+                ul.headerNavContent 
+                    li.headerNavContent__list Home
+                    li.headerNavContent__list About
+                    li.headerNavContent__list Contact
+                    li.headerNavContent__list Blog
+                    li.headerNavContent__list Careers
+            a.headernav__link(href="") Request Invite
+        main.main 
+            .home 
+                section.homeContainer--first
+                    h1.home__Title Next generation digital banking
+                    p.home__paragraph.paragraph   Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.
+                    a.home__link(href="") 
+                        button.home__button  Request Invite
+                section.homeContainer--second
+                    img.homeContainer__img
+            section.about 
+                h2.about__Title  Why choose Easybank?
+                p.about__paragraph.paragraph   We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.
+                .about__Cards 
+                    .about__Card--first
+                        mixin aboutcard
+                            img(src="", alt="")
+                            h3.about__Card__Title
+                            p.about__Card__paragraph.paragraph 
+                        +aboutcard
+                    .about__Card--second
+                        +aboutcard
+                    .about__Card--third
+                        +aboutcard
+                    .about__Card--fourth
+                        +aboutcard
+            section.articles 
+                h2.articles__Ttile 
+                .articles__Container
+                    .articles__Container--first
+                        mixin articles__Container
+                            .articles__Container__img 
+                            span.articles__Container__span 
+                            h3.articles__Container__title 
+                            p.articles__Container__paragraph.paragraph 
+                        +articles__Container
+                    .articles__Container--second
+                        +articles__Container
+                    .articles__Container--third
+                        +articles__Container
+                    .articles__Container--fourth
+                        +articles__Container
+        footer.footer 
+            .footer__Container--first 
+                img(src="./images/logo.svg", alt="", srcset="")
+                .footer__socialmedias
+                    img.footer__socialmedias(src="", alt="")
+                    img.footer__socialmedias(src="", alt="")
+                    img.footer__socialmedias(src="", alt="")
+                    img.footer__socialmedias(src="", alt="")
+                    img.footer__socialmedias(src="", alt="")
+            .footer__Container--second 
+                .footer__Container__links--first
+                    mixin footerContainerlink
+                        a.footer__Container__link(href="") 
+                        a.footer__Container__link(href="") 
+                        a.footer__Container__link(href="") 
+                    +footerContainerlink
+                .footer__Container__links--second
+                    +footerContainerlink
+            .footer__Container--third   
+                a.footer__Container__link(href="") 
+                    button.footer__Container__button Request Invite
+                span.footer__Container__reserved  © Easybank. All Rights Reserved

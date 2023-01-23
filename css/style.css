@@ -229,6 +229,8 @@ body {
     align-items: center;
     justify-content: center;
     padding: 75px 50px;
+    gap: 100px;
+    text-align: left;
   }
   .about {
     text-align: left;

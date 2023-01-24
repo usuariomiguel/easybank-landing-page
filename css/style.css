@@ -53,10 +53,10 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .headerNavContent__list:hover {
-    border-bottom: 4px solid hsl(136deg, 65%, 51%);
-  }
+.headerNavContent__list:hover {
+  cursor: pointer;
+  padding-bottom: 25px;
+  border-bottom: 2px solid green;
 }
 
 .headernav__link {
@@ -85,7 +85,7 @@
   padding: 40px 0;
   text-align: center;
   background-color: hsl(233deg, 26%, 24%);
-  width: 100vw;
+  width: 100%;
 }
 @media screen and (min-width: 1024px) {
   .footer {
@@ -137,6 +137,14 @@
 
 .footer__Container--second {
   padding-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .footer__Container--second {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    gap: 50px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .footer__Container--second {
@@ -292,6 +300,34 @@ body {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .homeContainer--second {
+    grid-area: b;
+  }
+  .homeContainer--first {
+    grid-area: a;
+  }
+  .home {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-areas: "b a";
+    grid-template-columns: 5fr 5fr;
+    padding: 75px 50px;
+    gap: 100px;
+    text-align: left;
+  }
+  .about__Cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+  }
+  .articles__Container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .homeContainer--second {
     padding-top: 75px;

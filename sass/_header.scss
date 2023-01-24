@@ -56,9 +56,9 @@
 }
 
 .headerNavContent__list:hover {
-    @media screen and (min-width:1024px){
-        border-bottom: 4px solid hsl(136, 65%, 51%);
-    }
+    cursor: pointer;
+    padding-bottom: 25px;
+    border-bottom: 2px solid green;
 }
 
 .headernav__link {

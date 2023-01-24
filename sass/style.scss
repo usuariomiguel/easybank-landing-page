@@ -117,10 +117,42 @@ body {
     padding-bottom: 60px;
 }
 
-@media screen and (min-width:1024px){
+@media screen and (min-width:768px){
 
-    .main {
+    .homeContainer--second {
+        grid-area: b;
     }
+
+    .homeContainer--first {
+        grid-area: a;
+    }
+
+    .home {
+        margin: 0 auto;
+        max-width: 1200px;
+        display: grid;
+        grid-template-areas: "b a";
+        grid-template-columns: 5fr 5fr;
+        padding: 75px 50px;
+        gap: 100px;
+        text-align: left;
+    }
+
+    .about__Cards {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 50px;   
+    }
+
+    .articles__Container {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 50px;
+    }
+
+}
+
+@media screen and (min-width:1024px){
 
     .homeContainer--second {
         padding-top: 75px;

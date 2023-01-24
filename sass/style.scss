@@ -133,7 +133,9 @@ body {
         display: grid;
         grid-template-areas: "b a";
         grid-template-columns: 5fr 5fr;
+        align-items: center;
         padding: 75px 50px;
+        padding-top: 0;
         gap: 100px;
         text-align: left;
     }
@@ -155,7 +157,6 @@ body {
 @media screen and (min-width:1024px){
 
     .homeContainer--second {
-        padding-top: 75px;
         grid-area: b;
     }
 
@@ -169,7 +170,9 @@ body {
         display: grid;
         grid-template-areas: "b a";
         grid-template-columns: 5fr 5fr;
-        padding: 75px 50px;
+        align-items: center;
+        padding: 0 50px;
+        padding-top: 0;
         gap: 100px;
         text-align: left;
     }
@@ -203,6 +206,7 @@ body {
         text-align: left;
         max-width: 1200px;
         margin: 0 auto;
+        padding: 75px 50px;
     }
 
     .articles__Container {
@@ -227,6 +231,4 @@ body {
     .articles__Container__paragraph {
         padding: 0 20px;
     }
-
-
 }

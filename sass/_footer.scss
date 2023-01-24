@@ -64,7 +64,7 @@
         display: flex;
         justify-content: center;
         text-align: left;
-        gap: 50px;
+        gap: 20px;
     }
 
     @media screen  and (min-width:1024px ){
@@ -76,6 +76,18 @@
         gap: 100px;
         max-width: 1200px;
         font-size: 16px;
+    }
+}
+
+.footer__Container__links--first, .footer__Container__links--second{
+    @media screen and (min-width:768px){
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        gap: 20px;
+    }
+    @media screen  and (min-width:1024px ){
+        display: block;
     }
 }
 

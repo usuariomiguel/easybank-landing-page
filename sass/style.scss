@@ -119,10 +119,24 @@ body {
 
 @media screen and (min-width:1024px){
 
+    .main {
+    }
+
+    .homeContainer--second {
+        padding-top: 75px;
+        grid-area: b;
+    }
+
+    .homeContainer--first {
+        grid-area: a;
+    }
+
     .home {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        margin: 0 auto;
+        max-width: 1200px;
+        display: grid;
+        grid-template-areas: "b a";
+        grid-template-columns: 5fr 5fr;
         padding: 75px 50px;
         gap: 100px;
         text-align: left;
@@ -133,11 +147,19 @@ body {
         padding: 75px 50px;
     }
 
-    .about__paragraph {
-        max-width: 650px;
+    .aboutcontainerTitle {
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
+    .about__paragraph {
+        max-width: 1200px;
+        max-width: 650px;
+    }
+    
     .about__Cards {
+        margin: 0 auto;
+        max-width: 1200px;
         display: flex;
     }
 
@@ -147,6 +169,8 @@ body {
 
     .articles {
         text-align: left;
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
     .articles__Container {

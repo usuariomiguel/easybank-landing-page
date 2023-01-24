@@ -329,19 +329,52 @@ body {
     grid-template-columns: 5fr 5fr;
     align-items: center;
     padding: 75px 50px;
-    padding-top: 0;
     gap: 100px;
     text-align: left;
+  }
+  .about {
+    padding: 75px 50px;
+    text-align: left;
+  }
+  .aboutcontainerTitle {
+    padding-bottom: 50px;
+  }
+  .about__paragraph {
+    max-width: 80%;
   }
   .about__Cards {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 50px;
+    gap: 20px;
+  }
+  .articles {
+    padding: 75px 50px;
+    padding-top: 25px;
+    text-align: left;
   }
   .articles__Container {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 50px;
+    gap: 25px;
+  }
+  .articles__Container {
+    text-align: left;
+  }
+  .articles__Container .articles__Container--first {
+    background-color: hsl(0deg, 0%, 98%);
+    padding-bottom: 100px;
+  }
+  .articles__Container .articles__Container--second {
+    background-color: hsl(0deg, 0%, 98%);
+    padding-bottom: 100px;
+  }
+  .articles__Container .articles__Container--third {
+    background-color: hsl(0deg, 0%, 98%);
+    padding-bottom: 100px;
+  }
+  .articles__Container .articles__Container--fourth {
+    background-color: hsl(0deg, 0%, 98%);
+    padding-bottom: 100px;
   }
 }
 @media screen and (min-width: 1024px) {
